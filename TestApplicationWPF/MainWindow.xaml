@@ -1,0 +1,47 @@
+﻿<Window x:Class="TestApplicationWPF.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TestApplicationWPF"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <StackPanel Grid.Row="0">
+        <StackPanel>
+            <Label>Application Option</Label>
+            <CheckBox>Java</CheckBox>
+            <CheckBox IsChecked="True">C#</CheckBox>
+            <CheckBox>Visual studio</CheckBox>
+
+            <StackPanel Margin="10">
+                <Label>Mobile Application Enabled</Label>
+                <CheckBox>
+                    <TextBox>
+                        Xamarin Videos enabled
+                    </TextBox>
+                </CheckBox>
+            </StackPanel>
+            <StackPanel Margin="10 ,5">
+                <CheckBox IsThreeState="True" Name="AllCheck" Checked="AllCheck_Checked" Unchecked="AllCheck_Checked">
+                    All Feature Enabled
+                </CheckBox>
+            </StackPanel>
+            <StackPanel Margin="0 ,5">
+                <CheckBox Name="first" Checked="first_Checked" >First CheckBox</CheckBox>
+                <CheckBox Name="secondd" Checked="first_Checked" >SecondCheckBox</CheckBox>
+                <CheckBox Name="third" Checked="first_Checked">Third  CheckBox</CheckBox>
+            </StackPanel>
+        </StackPanel>
+        </StackPanel>
+        <StackPanel Grid.Row="1" >
+            <Button Content="click to add image" Click="Button_Click"/>
+            <Image x:Name="Img1" Width="200" Height="100"/>
+        </StackPanel>
+
+    </Grid>
+</Window>
