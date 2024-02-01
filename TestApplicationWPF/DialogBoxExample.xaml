@@ -7,6 +7,9 @@
         mc:Ignorable="d"
         Title="DialogBoxExample" Height="450" Width="800">
     <Grid>
-        
+        <StackPanel>
+            <TextBox Width="200" HorizontalAlignment="Center" VerticalAlignment="Center" x:Name="t1" Text=" "  Margin="20" Height="40"/>
+            <Button Content="Save File" Click="Button_Click" Width="200"/>
+        </StackPanel>
     </Grid>
 </Window>
